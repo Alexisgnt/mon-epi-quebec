@@ -2,7 +2,7 @@
   MODELE D'ARTICLE — à dupliquer chaque semaine.
   1. Copie ce fichier et renomme-le (ex: semaine2.html)
   2. Remplace le TITRE, les DATES et le TEXTE ci-dessous
-  3. Mets tes photos dans img/semaineX/ puis reference-les avec <figure>
+  3. Mets tes photos dans img/photos-sX/ (ex: img/photos-s2/) puis reference-les avec <figure>
   4. Ajoute une carte dans index.html qui pointe vers ce fichier
   5. Mets à jour les liens "post-nav" de l'article précédent et de celui-ci
 -->
@@ -19,7 +19,13 @@
 <header class="site-header">
   <div class="kicker">EPI 2025 – 2026 · ESEO</div>
   <h1>Mon EPI au Québec</h1>
-  <p class="subtitle">Alexis — HyphTech Inc. · Sherbrooke, Canada</p>
+  <p class="subtitle">Alexis — Université de Sherbrooke · Projet HyphTech Inc.</p>
+  <div class="flag-row">
+    <span class="flag-chip flag-fr" title="France"></span>
+    <span class="flag-arrow">&rarr;</span>
+    <span class="flag-chip flag-ca" title="Canada"></span>
+    <span class="flag-chip flag-qc" title="Québec"></span>
+  </div>
 </header>
 
 <nav class="breadcrumb"><a href="../index.html">&larr; Retour au blog</a></nav>
@@ -29,14 +35,15 @@
     <h1>Semaine X : TITRE</h1>
     <p class="post-meta">JJ mois – JJ mois 2026 · Semaine X</p>
 
-    <h2>Au travail chez HyphTech</h2>
+    <h2>Au travail sur le projet HyphTech</h2>
     <p>Décris ici tes missions de la semaine (contexte de travail — c'est noté dans la grille).</p>
 
     <h2>Découverte / anecdote culturelle</h2>
     <p>Décris ici une anecdote culturelle de la semaine (obligatoire pour la note).</p>
 
+    <!-- NOTE: mets tes photos dans img/photos-sX/ (le dossier img/semaine1/ d'origine est resté bloqué côté sync, on utilise img/photos-s1/ à la place pour la semaine 1) -->
     <figure>
-      <img src="../img/semaineX/photo1.jpg" alt="Description de la photo">
+      <img src="../img/photos-sX/photo1.jpg" alt="Description de la photo">
       <figcaption>Légende de la photo</figcaption>
     </figure>
 

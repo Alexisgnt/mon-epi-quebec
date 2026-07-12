@@ -50,6 +50,104 @@ a:hover { color: var(--accent); }
   margin: 0;
 }
 
+.flag-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1rem 0 0;
+}
+
+.flag-chip {
+  width: 30px;
+  height: 21px;
+  border-radius: 3px;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.45);
+  display: inline-block;
+}
+
+.flag-fr {
+  background: linear-gradient(to right, #0055a4 0%, #0055a4 33%, #fff 33%, #fff 66%, #ef4135 66%, #ef4135 100%);
+}
+
+.flag-ca {
+  background: linear-gradient(to right, #d80621 0%, #d80621 25%, #fff 25%, #fff 75%, #d80621 75%, #d80621 100%);
+  position: relative;
+}
+
+.flag-ca::after {
+  content: "\1F341";
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  line-height: 1;
+}
+
+.flag-qc {
+  background: #003da5;
+  position: relative;
+}
+
+.flag-qc::before,
+.flag-qc::after {
+  content: "";
+  position: absolute;
+  background: #fff;
+}
+
+.flag-qc::before {
+  left: 0;
+  right: 0;
+  top: 45%;
+  height: 10%;
+}
+
+.flag-qc::after {
+  top: 0;
+  bottom: 0;
+  left: 45%;
+  width: 10%;
+}
+
+.flag-arrow {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  opacity: 0.85;
+  font-size: 0.9rem;
+}
+
+.uni-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 0.8rem;
+  background: var(--paper);
+  border: 1px solid var(--border);
+  color: var(--leather-dark);
+  padding: 0.35rem 0.8rem;
+  border-radius: 999px;
+  font-weight: bold;
+}
+
+.day-block {
+  border-left: 3px solid var(--leather);
+  padding-left: 1rem;
+  margin: 1.4rem 0;
+}
+
+.day-block .day-label {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--leather);
+  font-weight: bold;
+  margin-bottom: 0.2rem;
+}
+
 nav.breadcrumb {
   max-width: 760px;
   margin: 0 auto;

@@ -4,21 +4,22 @@ Site statique (HTML/CSS/JS), sans framework, prêt pour GitHub Pages.
 
 ## Structure
 ```
-epi-blog/
-  index.html              → page d'accueil (liste des articles)
-  style.css
-  script.js
-  articles/
-    demarrage.html         → article "Le démarrage de l'EPI"
-    semaine1.html           → article "Semaine 1 : le grand départ"
-    _template.html          → modèle à dupliquer chaque semaine
-  img/
-    semaine1/                → photos de la semaine 1
+index.html              → page d'accueil (liste des articles)
+style.css
+script.js
+articles/
+  demarrage.html         → article "Le démarrage de l'EPI"
+  semaine1.html           → article "Semaine 1 : le grand départ"
+  _template.html          → modèle à dupliquer chaque semaine
+img/
+  photos-s1/               → photos de la semaine 1
 ```
+
+Note : le dossier de photos s'appelle `img/photos-s1/` (et pas `img/semaine1/`) suite à un souci de synchronisation sur l'ancien dossier — utilise le même schéma `img/photos-sX/` pour les semaines suivantes.
 
 ## Ajouter un article chaque semaine
 1. Copie `articles/_template.html` → renomme-le (ex. `semaine2.html`)
-2. Crée un dossier `img/semaine2/` et mets-y tes photos
+2. Crée un dossier `img/photos-s2/` et mets-y tes photos
 3. Remplis le titre, les dates, le texte (missions + une anecdote culturelle : c'est noté)
 4. Dans `index.html`, remplace la carte "à venir" par une vraie carte vers ton nouvel article
 5. Mets à jour les liens `post-nav` (précédent/suivant) dans les deux articles concernés
