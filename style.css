@@ -455,6 +455,48 @@ footer.site-footer {
   font-weight: 600;
 }
 
+/* ---------- Avertissement contenu sensible ---------- */
+.warning-link {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  background: color-mix(in srgb, var(--accent) 10%, var(--paper));
+  border: 1px solid var(--accent);
+  border-radius: 12px;
+  padding: 1rem 1.2rem;
+  margin: 1.6rem 0;
+  text-decoration: none;
+  color: var(--accent-dark);
+  font-weight: 600;
+  transition: background 0.15s ease;
+}
+
+.warning-link:hover {
+  background: color-mix(in srgb, var(--accent) 18%, var(--paper));
+  color: var(--accent-dark);
+}
+
+.warning-link .warning-icon { font-size: 1.4rem; }
+.warning-link .warning-text { flex: 1; }
+.warning-link .warning-sub {
+  display: block;
+  font-weight: 400;
+  font-size: 0.82rem;
+  color: var(--ink-soft);
+  margin-top: 0.15rem;
+}
+
+.warning-banner {
+  background: color-mix(in srgb, var(--accent) 14%, var(--paper));
+  border: 1px solid var(--accent);
+  border-radius: 12px;
+  padding: 1.1rem 1.3rem;
+  margin-bottom: 2rem;
+  font-size: 0.92rem;
+  color: var(--accent-dark);
+  font-weight: 600;
+}
+
 /* ---------- Scroll reveal ---------- */
 .reveal {
   opacity: 0;
